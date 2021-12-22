@@ -33,7 +33,7 @@ public class Main {
      *
      * @param function - построитель словаря
      * @param inputStr - данные для помещения в словарь
-     * @return словарь
+     * @return - словарь
      */
     public static String makeDictionary(Function<String, String> function, String inputStr) {
         return function.apply(inputStr);
