@@ -20,6 +20,7 @@ public class Main {
         // "Функция, которая составляет словарь, должна быть оформлена как реализатор Function"
         Function<String, String> dictiMaker = str ->
                 Arrays.stream(str.split(" "))
+                        .distinct()
                         .sorted(Comparator.naturalOrder())
                         .collect(Collectors.joining(" "));
 
